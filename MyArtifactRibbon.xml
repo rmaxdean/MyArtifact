@@ -1,0 +1,60 @@
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" onLoad="onRibbonLoad">
+    
+	<ribbon startFromScratch="true">
+	
+		<tabs>
+            <tab id="tabHome" label="Home">
+				<group id="grpDataEntry" label="Data Entry"  visible="true">
+					 <button id="butArtifactList" label="Artifact List" imageMso="CreateFormWithMultipleItems" size="large" onAction="OnButtonPress" />
+					 <button id="butArtifactAdd" label="Add Artifact" imageMso="QueryShowTable" size="large" onAction="OnButtonPress" />
+				</group>
+				<group id="grpExport" label="Export"  visible="true">
+					<splitButton id="splitExport" size="large">
+						<button id="butExportAttributes" imageMso="ConvertDatabaseFormat" label="Export Attributes" />
+						<menu id="splmenuExport" itemSize="large">
+							<button id="butAllAttributes" imageMso="ExportExcel" label="All Attributes" onAction="OnButtonPress" supertip="export all data" />
+							<button id="butSelectAttributes" imageMso="ExportExcel" label="Select Attributes" onAction="OnButtonPress" supertip="select data for export" />
+						</menu>
+					</splitButton>
+				</group>
+				<group id="grpReports" label="Reports"  visible="true">
+					<splitButton id="splitLabels" size="large">
+						<button id="butLabels" imageMso="CreateLabels" label="Labels" />
+						<menu id="splmenuLabels" itemSize="large">
+							<button id="butBarcoded" imageMso="BarcodeInsert" label="Barcoded" onAction="OnButtonPress" />
+							<button id="butNoBarcode" imageMso="CreateLabels" label="Text Only" onAction="OnButtonPress" />
+						</menu>
+					</splitButton>
+				</group>
+				<group id="grpUtilities" label="Utilities"  visible="true">
+					<button id="butLOVMng" label="Manage LOVs" imageMso="CreateQueryFromWizard" size="large" onAction="OnButtonPress" />
+					<button id="butSettings" label="Settings" imageMso="CreateTableTemplatesGallery" size="large" onAction="OnButtonPress" />
+				</group>
+				<group id="grpHelp" label="Help"  visible="true">
+					<button id="butHelp" label="Help" imageMso="Help" size="large" onAction="OnButtonPress" />
+				</group>
+				<group id="grpAbout" label="About"  visible="true">
+					<button id="butFeedback" label="Provide Feedback" imageMso="AccessTableContacts" size="large" onAction="OnButtonPress" />
+					<button id="butAboutProg" label="About Easy Artifact" imageMso="Info" size="large" onAction="OnButtonPress" />					
+					<button id="butAboutComp" label="About Digging Up Data LLC" imageMso="ProposeNewTime" size="large" onAction="OnButtonPress" />
+				</group>
+			</tab>
+        </tabs>
+    </ribbon>
+	<backstage>
+    <tab idMso="TabInfo" visible="true"/>
+    <button idMso="FileSave" visible="false"/>
+    <button idMso="SaveObjectAs" visible="false"/>
+    <button idMso="FileSaveAsCurrentFileFormat" visible="false"/>
+    <button idMso="FileOpen" visible="false"/>
+    <button idMso="FileCloseDatabase" visible="false"/>
+    <tab idMso="TabRecent" visible="false"/>
+    <tab idMso="TabNew" visible="false"/>
+    <tab idMso="TabPrint" visible="true"/>
+    <tab idMso="TabShare" visible="false"/>
+    <tab idMso="TabHelp" visible="false"/>
+    <button idMso="ApplicationOptionsDialog" visible="false"/>
+    <button idMso="FileExit" visible="true"/>
+	
+  </backstage>
+</customUI>
