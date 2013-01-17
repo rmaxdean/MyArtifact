@@ -1,9 +1,9 @@
 <customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" onLoad="onRibbonLoad">
     
-	<ribbon startFromScratch="true">
+	<ribbon startFromScratch="false">
 	
 		<tabs>
-            <tab id="tabHome" label="Home">
+            <tab id="tabHome" label="MyArtifact">
 				<group id="grpDataEntry" label="Data Entry"  visible="true">
 					 <button id="butArtifactList" label="Artifact List" imageMso="CreateFormWithMultipleItems" size="large" onAction="OnButtonPress" />
 					 <button id="butArtifactAdd" label="Add Artifact" imageMso="QueryShowTable" size="large" onAction="OnButtonPress" />
@@ -30,13 +30,8 @@
 					<button id="butLOVMng" label="Manage LOVs" imageMso="CreateQueryFromWizard" size="large" onAction="OnButtonPress" />
 					<button id="butSettings" label="Settings" imageMso="CreateTableTemplatesGallery" size="large" onAction="OnButtonPress" />
 				</group>
-				<group id="grpHelp" label="Help"  visible="true">
-					<button id="butHelp" label="Help" imageMso="Help" size="large" onAction="OnButtonPress" />
-				</group>
 				<group id="grpAbout" label="About"  visible="true">
-					<button id="butFeedback" label="Provide Feedback" imageMso="AccessTableContacts" size="large" onAction="OnButtonPress" />
 					<button id="butAboutProg" label="About Easy Artifact" imageMso="Info" size="large" onAction="OnButtonPress" />					
-					<button id="butAboutComp" label="About Digging Up Data LLC" imageMso="ProposeNewTime" size="large" onAction="OnButtonPress" />
 				</group>
 			</tab>
         </tabs>
