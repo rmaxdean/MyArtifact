@@ -2,6 +2,9 @@ MyArtifact
 ==========
 MyArtifact provides a semi-programmable interface to assist archaeologists in labwork related to recording information about cultural remains. The interface is built, and there is a form to help you structure data entry. Then you can enter data with the logic pre-defined. 
 
+Install:
+If you are not too familiar with MS Access, know that you just need the .accdb file.
+
 Support:
 Create an issue here in this repo.
 
